@@ -1,0 +1,16 @@
+no terminal more
+sh hw-inv det
+sh sw
+sh flash
+sh ip int b 
+sh ldp session
+sh ip bgp sum
+sh clns neighbors
+sh ip route table
+sh ip route
+sh ldp pwe
+sh pwe circuit brief
+sh fa active
+show interface ge2/0
+sh ip int
+sh tech

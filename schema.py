@@ -43,7 +43,7 @@ def traerarchivo():
     directorio = '/flash/debug/log'
     ftp.cwd(directorio)
     # Nombre del archivo a extraer
-    nombre_archivo = 'PerfEvent_u1_1703.txt'
+    nombre_archivo = 'PerfEvent_u1_1718.txt'
     # Crear un archivo local para guardar los datos del archivo extraído
     archivo_local = open(nombre_archivo, 'wb')
     # Extraer el archivo desde el servidor FTP y guardarlo en el archivo local
@@ -53,8 +53,11 @@ def traerarchivo():
     archivo_local.close()
     print('El archivo', nombre_archivo,
           'ha sido extraído correctamente desde el servidor FTP.')
-
-
+    
+#/flash/appl-sw
+# se guarda el software
+#/flash/snapshot-config
+#se guarda el backup
 def subirarchivo():
     #!/usr/bin/env python
     import ftplib
@@ -67,8 +70,8 @@ def subirarchivo():
 
     # Datos del fichero a subir
     #fichero_origen = '/home/gorka/mifichero.zip'
-    fichero_origen = 'prueba.txt'
-    fichero_destino = 'prueba.txt'
+    fichero_origen = 'comandos.txt'
+    fichero_destino = 'comandos.txt'
     # Conectamos con el servidor
     try:
         s = ftplib.FTP(servidor, usuario, contrasena)
